@@ -11,17 +11,17 @@ auto.create.topics.enable=false
 
 ## How to create a topic ?
 
-./kafka-console-producer.sh --broker-list localhost:9092 --topic test-topic
+  ./kafka-console-producer.sh --broker-list localhost:9092 --topic test-topic
 
 ## How to instantiate a Console Producer?
 
 ## Without Key
 
-- ./kafka-console-producer.sh --broker-list localhost:9092 --topic test-topic --property "key.separator=-" --property "parse.key=true"
+   ./kafka-console-producer.sh --broker-list localhost:9092 --topic test-topic --property "key.separator=-" --property "parse.key=true"
 
 ### With Key
 
-./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --from-beginning -property "key.separator= - " --property "print.key=true"
+   ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --from-beginning -property "key.separator= - " --property "print.key=true"
 
 ### With Consumer Group
 
