@@ -31,6 +31,17 @@ auto.create.topics.enable=false
 ### Consume messages With Kafka Headers
   
      ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic library-events.DLT --from-beginning --property print.headers=true --property print.timestamp=true
+     
+## Advanced Kafka CLI operations:
+### List the topics in a cluster
+
+./kafka-topics.sh --bootstrap-server localhost:9092 --list
+
+## Describe topic
+
+./kafka-topics.sh --bootstrap-server localhost:9092 --describe
+
+./kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic <topic-name>
   
 
   
