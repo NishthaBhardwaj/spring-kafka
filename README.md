@@ -2,7 +2,8 @@
 
 ## Setting Up Kafka 3.0.0
 -- Start up the Zookeeper.
-- ./zookeeper-server-start.sh ../config/zookeeper.properties
+
+  ./zookeeper-server-start.sh ../config/zookeeper.properties
 
 - Add the below properties in the server.properties
 
@@ -21,7 +22,7 @@ auto.create.topics.enable=false
 
 ### With Key
 
-   ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --from-beginning -property "key.separator= - " --property "print.key=true"
+   ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --from-beginning -property "key.separator= - " --property     "print.key=true"
 
 ### With Consumer Group
 
