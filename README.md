@@ -25,7 +25,7 @@ auto.create.topics.enable=false
 
 ### With Consumer Group
 
-./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --group <group-name>
+    ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --group <group-name>
   
 ### Consume messages With Kafka Headers
   
